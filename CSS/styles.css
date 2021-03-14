@@ -1,0 +1,124 @@
+/* Общие настройки страницы */
+
+body {
+  background-color: #e5e5e5;
+  color: #757575;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-dark: #2f303a;
+  --color-accent: #2196f3;
+  --background-color-gallery: #eeeeee;
+  --background-color-elements: #f5f4fa;
+  --color-text-major: #212121;
+  --color-text-element: #757575;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* Шапка страницы */
+
+.header {
+  background-color: var(--color-white);
+}
+
+.logo {
+  color: var(--color-accent);
+}
+
+.header .tiny {
+  color: #000000;
+}
+
+.pagination-list {
+  color: var(--color-text-major);
+}
+
+.pagination-list:hover,
+.pagination-list:focus,
+.contacts-mail:hover,
+.contacts-mail:focus {
+  color: var(--color-accent);
+}
+
+.contacts-mail,
+.contacts-phone {
+  color: var(--color-text-element);
+}
+
+/* Контент главной страницы */
+/* Герой */
+.hero {
+  background-color: var(--color-text-major);
+}
+
+.hero-title {
+  color: var(--color-white);
+}
+
+.hero-button {
+  color: var(--color-white);
+  background-color: var(--color-accent);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--color-accent);
+  background-color: var(--color-white);
+}
+
+/* Наши приемущества */
+.subtitle {
+  color: var(--color-text-major);
+}
+
+/* Чем мы занимаемся */
+.title {
+  color: var(--color-text-major);
+}
+
+/* Наша команда */
+.team {
+  background-color: var(--background-color-elements);
+}
+.team-item {
+  background-color: var(--color-white);
+}
+
+.team-member {
+  color: var(--color-text-major);
+}
+
+/* Контент страницы портфолио */
+
+/* Подвал страницы */
+.footer {
+  background-color: var(--color-dark);
+}
+
+.footer .tiny {
+  color: var(--color-white);
+}
+
+.address-text {
+  color: var(--color-white);
+}
+.mail,
+.phone {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mail:hover,
+.mail:focus {
+  color: var(--color-accent);
+}
