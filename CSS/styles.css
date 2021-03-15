@@ -1,7 +1,7 @@
 /* Общие настройки страницы */
 
 body {
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   color: #757575;
 }
 
@@ -9,10 +9,9 @@ body {
   --color-white: #ffffff;
   --color-dark: #2f303a;
   --color-accent: #2196f3;
-  --background-color-gallery: #eeeeee;
   --background-color-elements: #f5f4fa;
   --color-text-major: #212121;
-  --color-text-element: #757575;
+  --color-text-main: #757575;
 }
 
 .visually-hidden {
@@ -26,11 +25,18 @@ body {
   overflow: hidden;
 }
 
+.items {
+  list-style: none;
+}
+
+.pagination .pagination-list.current {
+  color: var(--color-accent);
+}
 /* Шапка страницы */
 
-.header {
+/* .header {
   background-color: var(--color-white);
-}
+} */
 
 .logo {
   color: var(--color-accent);
@@ -46,20 +52,19 @@ body {
 
 .pagination-list:hover,
 .pagination-list:focus,
-.contacts-mail:hover,
-.contacts-mail:focus {
+.contacts-list:hover,
+.contacts-list:focus {
   color: var(--color-accent);
 }
 
-.contacts-mail,
-.contacts-phone {
-  color: var(--color-text-element);
+.contacts-list {
+  color: var(--color-text-main);
 }
 
 /* Контент главной страницы */
 /* Герой */
 .hero {
-  background-color: var(--color-text-major);
+  background-color: var(--color-dark);
 }
 
 .hero-title {
@@ -91,7 +96,7 @@ body {
 .team {
   background-color: var(--background-color-elements);
 }
-.team-item {
+.team-list {
   background-color: var(--color-white);
 }
 
@@ -110,9 +115,10 @@ body {
   color: var(--color-white);
 }
 
-.gallery-list {
+/* .gallery-list {
   background-color: var(--color-white);
-}
+} */
+
 .gallery-title {
   color: var(--color-text-major);
 }
@@ -129,12 +135,11 @@ body {
 .address-text {
   color: var(--color-white);
 }
-.mail,
-.phone {
+.address-list {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.mail:hover,
-.mail:focus {
+.address-list:hover,
+.address-list:focus {
   color: var(--color-accent);
 }
