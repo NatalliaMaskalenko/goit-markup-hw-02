@@ -1,8 +1,10 @@
 /* Общие настройки страницы */
-
 body {
   background-color: #ffffff;
   color: #757575;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
 }
 
 :root {
@@ -32,14 +34,22 @@ body {
 .pagination .pagination-list.current {
   color: var(--color-accent);
 }
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
 /* Шапка страницы */
-
-/* .header {
-  background-color: var(--color-white);
-} */
-
 .logo {
   color: var(--color-accent);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .header .tiny {
@@ -48,6 +58,12 @@ body {
 
 .pagination-list {
   color: var(--color-text-major);
+  text-decoration: none;
+}
+
+.contacts-list {
+  color: var(--color-text-main);
+  text-decoration: none;
 }
 
 .pagination-list:hover,
@@ -55,6 +71,14 @@ body {
 .contacts-list:hover,
 .contacts-list:focus {
   color: var(--color-accent);
+}
+
+.pagination-list,
+.contacts-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .contacts-list {
@@ -69,11 +93,22 @@ body {
 
 .hero-title {
   color: var(--color-white);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .hero-button {
   color: var(--color-white);
   background-color: var(--color-accent);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 
 .hero-button:hover,
@@ -85,11 +120,29 @@ body {
 /* Наши приемущества */
 .subtitle {
   color: var(--color-text-major);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.text-description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* Чем мы занимаемся */
 .title {
   color: var(--color-text-major);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* Наша команда */
@@ -100,27 +153,54 @@ body {
   background-color: var(--color-white);
 }
 
-.team-member {
+.team-subject {
   color: var(--color-text-major);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-member {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* Контент страницы портфолио */
 .button {
   background-color: var(--background-color-elements);
   color: var(--color-text-major);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
+
 .button:hover,
 .button:focus {
   background-color: var(--color-accent);
   color: var(--color-white);
 }
 
-/* .gallery-list {
-  background-color: var(--color-white);
-} */
-
 .gallery-title {
   color: var(--color-text-major);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.gallery-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
 
 /* Подвал страницы */
@@ -137,9 +217,18 @@ body {
 }
 .address-list {
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 
 .address-list:hover,
 .address-list:focus {
   color: var(--color-accent);
+}
+
+.address-text,
+.address-list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
